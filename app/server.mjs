@@ -1,6 +1,7 @@
 import express from "express";
 import axios from "axios";
 import dotenv from "dotenv";
+import cors from "cors";
 
 dotenv.config();
 const githubAccessToken = process.env.GITHUB_ACCESS_TOKEN;
@@ -8,6 +9,7 @@ const port = process.env.PORT || 9000;
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // Route to handle the commit request
 app.post("/commit", async (req, res) => {
