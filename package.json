@@ -1,0 +1,28 @@
+{
+  "name": "github-committer-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/server.js",
+  "scripts": {
+    "start": "node app/server.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuraitruong/github-committer-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuraitruong/github-committer-api/issues"
+  },
+  "homepage": "https://github.com/samuraitruong/github-committer-api#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
